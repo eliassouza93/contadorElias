@@ -6,25 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
+        body {
             background-image: url(norway-4970080_1920.jpg);
             color: white;
             font-size: 22px;
             
         }
-        #mostra ,#mostra1{
+        h1{
+            color: darkblue;
+        }
+        
+        #mostra,
+        #mostra1 {
             color: rgb(39, 204, 75);
         }
-        #texto{
+        .bnt{
+            text-align: left;
+            color: darkblue;
+        }
+
+        #texto {
             font-size: 20px;
         }
-        footer{
+
+        .fot {
 
             padding: 0.3em;
             text-align: center;
-            border-top: .5rem solid #000000;
-            background-color: #0c4b7075;
-            padding-bottom:  1em;
+            background-color: #0c4b7000;
+            padding-bottom: 1em;
             margin-left: auto;
             margin-right: auto;
             background-attachment: scroll;
@@ -41,7 +51,19 @@
             font-size: 15px;
 
         }
-    
+
+        @media screen and (max-width: 480px) {
+            body {
+                text-align: center;
+                margin-top: 200px;
+            }
+
+            .fot {
+
+                bottom: -74px;
+                text-align: center;
+            }
+        }
     </style>
     <title>JS</title>
 </head>
@@ -52,8 +74,8 @@
 
     <textarea name="" id="texto" cols="40" rows="8"></textarea>
 
-    <p>Caracter: <span id="mostra"></span></p>
-    <p>Caracter: <span id="mostra1"></span></p>
+    <p class="bnt">Caracter: <span id="mostra"></span></p>
+    <p class="bnt">Caracter: <span id="mostra1"></span></p>
 
     <script>
 
@@ -71,7 +93,12 @@
 
     </script>
 
-    <footer><p>Desenvolvido por Elias &copy 2022</p></footer>
+    <footer class="fot">
+        <div class="fot">
+            <p class="fot">Desenvolvido por Elias &copy 2022</p>
+        </div>
+
+    </footer>
 
 </body>
 
