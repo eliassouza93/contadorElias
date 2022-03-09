@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(norway-4970080_1920.jpg);
+            color: white;
+            font-size: 22px;
+            
+        }
+        #mostra ,#mostra1{
+            color: rgb(39, 204, 75);
+        }
+        #texto{
+            font-size: 20px;
+        }
+        footer{
+
+            padding: 0.3em;
+            text-align: center;
+            border-top: .5rem solid #000000;
+            background-color: #0c4b7075;
+            padding-bottom:  1em;
+            margin-left: auto;
+            margin-right: auto;
+            background-attachment: scroll;
+            background-image: url(../img/bg-faixa-rodape.png);
+            background-position: right top;
+            background-repeat: no-repeat;
+            text-shadow: 2px 2px 4px #0a0a0a, 0 0 25px #bfb068, 0 0 5px #33338e;
+            position: absolute;
+            clear: both;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 15px;
+
+        }
+    
+    </style>
+    <title>JS</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>JavaScript</h1>
+
+
+    <textarea name="" id="texto" cols="40" rows="8"></textarea>
+
+    <p>Caracter: <span id="mostra"></span></p>
+    <p>Caracter: <span id="mostra1"></span></p>
+
+    <script>
+
+        addEventListener('input', function () {
+            var mostra = document.querySelector("#mostra")
+            var texto = document.querySelector("#texto").value.length
+            mostra.innerHTML = texto
+        })
+
+        addEventListener('input', function () {
+            var mostra1 = document.querySelector("#mostra1")
+            var texto = document.querySelector("#texto").value
+            mostra1.innerHTML = texto
+        })
+
+    </script>
+
+    <footer><p>Desenvolvido por Elias &copy 2022</p></footer>
+
+</body>
+
+</html>
